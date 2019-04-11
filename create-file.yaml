@@ -1,0 +1,10 @@
+---
+- name: create-file
+  hosts: localhost
+  tasks:
+    - name: creat momofile1
+      file:
+        path: /tmp/momofile1
+        state: touch
+        mode: 0744
+        

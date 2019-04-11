@@ -1,0 +1,12 @@
+---
+  - name: add group 
+    hosts: localhost
+    tasks:
+      - name: add group
+        group:
+          name: sysuser
+      - name: add user
+        user: 
+          name: ahmad
+          uid: 1040
+          groups: sysuser

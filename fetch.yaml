@@ -1,0 +1,8 @@
+---
+- name: copy
+  hosts: ubuntu
+  tasks:
+    - name: copy to centos
+      fetch:
+        src: /tmp/test-file
+        dest: /tmp/

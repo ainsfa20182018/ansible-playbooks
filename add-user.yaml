@@ -1,0 +1,8 @@
+---
+  - name: add-user
+    hosts: all
+    tasks:
+      - name: add  momo
+        user:
+          name: momo
+        

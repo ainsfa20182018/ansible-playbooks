@@ -1,0 +1,8 @@
+---
+- name: copy-file
+  hosts: ubuntu
+  tasks: 
+    - name: copy file from centos to ubuntu
+      copy: 
+        src: /tmp/momofile1
+        dest: /tmp
